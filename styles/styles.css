@@ -1,18 +1,35 @@
+button {
+  width: -webkit-fill-available;
+  cursor: pointer;
+}
 
 #container {
-  display: grid;
-  grid-template-columns: repeat(16, 6.25%);
-  grid-template-rows: auto;
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
   height: 500px;
-    width: 500px;
-    margin: auto;
+  width: 500px;
+  margin: auto;
+
 }
 
-.grid {
-  border: 1px solid;
+.row {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-evenly;
 }
 
-.grid:hover{
-  background-color: black;
+.gridSquare {
+  border: 1px solid black;
+  display: flex;
+  position: relative;
+  top: 0; left: 0;
+  height: auto;
+  width: -webkit-fill-available;
+  flex-direction: column;
+  justify-content: space-evenly;
+
 }
